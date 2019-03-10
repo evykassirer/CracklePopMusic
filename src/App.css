@@ -16,3 +16,15 @@
 .App-link {
   color: #61dafb;
 }
+
+.startButton {
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+}
+
+.startButton:hover {
+  background-color: lightblue;
+  font-weight: 500;
+}

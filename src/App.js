@@ -4,11 +4,7 @@ import PitchPlayer from './PitchPlayer.js'
 
 class App extends Component {
   state = {
-    number: 1
-  }
-
-  componentDidMount() {
-    setTimeout(this.incrementNumber, 1000)
+    number: 0
   }
 
   incrementNumber = () => {
@@ -22,11 +18,21 @@ class App extends Component {
   }
 
   render() {
+    let inner;
+    if (this.state.number === 0) {
+      inner = <button className="startButton" onClick={this.incrementNumber}>
+        Click to start
+      </button>
+    }
+    else {
+      inner = <PitchPlayer number={this.state.number}/>
+    }
+
     return (
       <div className="App">
         <header className="App-header">
           <p>
-            <PitchPlayer number={this.state.number}/>
+            {inner}
           </p>
         </header>
       </div>
