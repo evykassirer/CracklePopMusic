@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/crackle-pop-music/precache-manifest.366a3f38527669ab78f456ac0c67e391.js"
+  "/crackle-pop-music/precache-manifest.eb56dca38a60534d37d520adcfaa9a0e.js"
 );
 
 workbox.clientsClaim();
